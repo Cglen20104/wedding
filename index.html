@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>張煥翊 & 陳佑欣 婚禮邀請函</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cormorant Condensed (Narrow), Cormorant Garamond & Noto Serif TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Condensed:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Noto+Serif+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #d4a373;     /* Morandi Warm Sun */
+            --color-secondary: #8da399;   /* Morandi Soft Sage */
+            --color-bg: #FAF6F0;          /* Warm Cream Background */
+        }
+        body {
+            font-family: 'Noto Serif TC', serif;
+            background-color: var(--color-bg);
+            color: #3c3732;
+        }
+        .font-serif-en {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .font-serif-condensed {
+            font-family: 'Cormorant Condensed', serif;
+        }
+        /* Hide Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF6F0;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d4a373;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navbar (Fixed Glassmorphism with larger font) -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-md border-b border-white/40 shadow-sm transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="#" class="font-serif-en text-2xl md:text-3xl font-semibold tracking-widest text-[#d4a373] hover:opacity-80 transition-opacity">
+                H & Y
+            </a>
+            <div class="flex space-x-6 md:space-x-12 text-sm md:text-base tracking-widest font-medium text-stone-700">
+                <a href="#about" class="hover:text-[#d4a373] transition-colors duration-300">關於我們</a>
+                <a href="#details" class="hover:text-[#d4a373] transition-colors duration-300">婚禮詳情</a>
+                <a href="#rsvp" class="hover:text-[#d4a373] transition-colors duration-300">出席回函</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner (Responsive split layout to prevent photo crop on desktop) -->
+    <header class="relative h-screen w-full flex flex-col md:flex-row overflow-hidden bg-[#FAF6F0]">
+        
+        <!-- Image Container: full screen on mobile (shifted up), right 50% on desktop -->
+        <div class="absolute inset-0 md:relative md:inset-auto md:w-1/2 md:h-full md:order-2 z-0 overflow-hidden">
+            <img src="https://i.postimg.cc/1RBnBQ14/0407E15A-B087-406F-8513-A50E02573ACA.jpg" 
+                 alt="Wedding Cover" 
+                 class="w-full h-[108%] -translate-y-[4%] md:translate-y-0 md:h-full object-cover object-top"
+                 onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1920'">
+            <!-- Gradient Overlay: mobile only to ensure text readability -->
+            <div class="absolute inset-0 bg-gradient-to-t from-[#FAF6F0]/95 via-black/20 to-black/30 md:hidden"></div>
+        </div>
+
+        <!-- Typography Box: centered overlay on mobile, left 50% on desktop -->
+        <div class="relative z-10 w-full h-full flex flex-col justify-center items-center text-center text-white md:text-stone-800 px-6 max-w-none md:w-1/2 md:h-full md:order-1 md:bg-[#FAF6F0] md:border-r md:border-stone-100">
+            <span class="font-serif-en text-[10px] md:text-sm tracking-[0.4em] uppercase mb-3 text-[#FAF6F0] bg-[#d4a373]/80 md:bg-transparent md:text-[#d4a373] px-3 py-1 md:px-0 md:py-0 rounded-full md:rounded-none drop-shadow-md md:drop-shadow-none">Wedding Invitation</span>
+            
+            <!-- Using Cormorant Condensed font and inline-block for hyphenated names to fully prevent wraps -->
+            <h1 class="font-serif-condensed text-[7.5vw] sm:text-4xl md:text-5xl lg:text-7xl font-light tracking-[0.1em] mb-3 drop-shadow-lg md:drop-shadow-none text-white md:text-stone-800 whitespace-nowrap">
+                <span class="inline-block">Huan-Yi</span> &amp; <span class="inline-block">Yo-Shin</span>
+            </h1>
+            
+            <p class="text-sm md:text-xl font-light tracking-[0.3em] mb-6 text-white/95 md:text-stone-600 drop-shadow-md md:drop-shadow-none">張煥翊 ＆ 陳佑欣</p>
+            
+            <div class="w-12 h-[1px] bg-white/60 md:bg-[#d4a373]/50 mb-6"></div>
+            
+            <p class="font-serif-en italic text-base md:text-2xl font-light tracking-widest mb-1 text-white/95 md:text-stone-700 drop-shadow md:drop-shadow-none">
+                "Happily ever after starts here."
+            </p>
+            <p class="text-xs md:text-sm tracking-[0.25em] font-light text-white/80 md:text-stone-500 drop-shadow md:drop-shadow-none">
+                幸福快樂從這裡開始
+            </p>
+
+            <!-- Ground scroll down indicator (Mobile only) -->
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center animate-bounce md:hidden">
+                <span class="text-[10px] tracking-widest text-[#FAF6F0] mb-2 opacity-80">SCROLL DOWN</span>
+                <svg class="w-4 h-4 text-[#FAF6F0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section: About Us & Countdown -->
+    <section id="about" class="py-20 px-6 max-w-5xl mx-auto text-center">
+        <span class="font-serif-en text-xs md:text-sm tracking-[0.4em] text-[#d4a373] uppercase block mb-3">Our Love Story</span>
+        <h2 class="text-2xl md:text-3xl tracking-[0.2em] font-medium mb-10 text-stone-800">關於我們</h2>
+        
+        <!-- Enlarged text for readability, slightly adjusted for mobile -->
+        <p class="max-w-3xl mx-auto text-stone-600 leading-[1.8] tracking-wider mb-16 font-light text-sm md:text-base">
+            在對的時間，遇見攜手一生的靈魂伴侶。<br class="hidden md:inline">
+            我們決定在盛夏微風與燦爛陽光交織的璀璨季節裡，許下彼此相伴的誓言。<br class="hidden md:inline">
+            誠摯邀請您參與我們的幸福時刻，一同見證這段美麗的新起點。
+        </p>
+
+        <!-- Countdown Timer -->
+        <div class="mb-8">
+            <p class="font-serif-en text-[10px] md:text-xs tracking-[0.3em] text-[#8da399] uppercase mb-6">Wedding Countdown</p>
+            
+            <!-- White Shimmering Cards Container with Soft Shadow - Perfect 2x2 grid on mobile, flex on desktop -->
+            <div class="grid grid-cols-2 lg:flex lg:flex-row lg:justify-center gap-3 md:gap-6 max-w-[320px] lg:max-w-none mx-auto">
+                <!-- Days Card -->
+                <div class="flex items-center justify-between px-4 py-3 md:px-6 md:py-4 bg-white/90 border border-white/60 rounded-2xl shadow-[0_12px_30px_rgba(212,163,115,0.06)] backdrop-blur-sm">
+                    <span id="days" class="font-serif-en text-3xl md:text-4xl font-light text-[#d4a373]">00</span>
+                    <div class="h-8 w-[1px] bg-stone-200 mx-3 md:mx-4"></div>
+                    <span class="text-[10px] md:text-xs uppercase tracking-[0.15em] text-[#8da399] font-medium text-left">Days<br><span class="text-stone-400 font-normal text-[9px] md:text-[11px]">天</span></span>
+                </div>
+                
+                <!-- Hours Card -->
+                <div class="flex items-center justify-between px-4 py-3 md:px-6 md:py-4 bg-white/90 border border-white/60 rounded-2xl shadow-[0_12px_30px_rgba(212,163,115,0.06)] backdrop-blur-sm">
+                    <span id="hours" class="font-serif-en text-3xl md:text-4xl font-light text-[#d4a373]">00</span>
+                    <div class="h-8 w-[1px] bg-stone-200 mx-3 md:mx-4"></div>
+                    <span class="text-[10px] md:text-xs uppercase tracking-[0.15em] text-[#8da399] font-medium text-left">Hours<br><span class="text-stone-400 font-normal text-[9px] md:text-[11px]">時</span></span>
+                </div>
+
+                <!-- Minutes Card -->
+                <div class="flex items-center justify-between px-4 py-3 md:px-6 md:py-4 bg-white/90 border border-white/60 rounded-2xl shadow-[0_12px_30px_rgba(212,163,115,0.06)] backdrop-blur-sm">
+                    <span id="minutes" class="font-serif-en text-3xl md:text-4xl font-light text-[#d4a373]">00</span>
+                    <div class="h-8 w-[1px] bg-stone-200 mx-3 md:mx-4"></div>
+                    <span class="text-[10px] md:text-xs uppercase tracking-[0.15em] text-[#8da399] font-medium text-left">Mins<br><span class="text-stone-400 font-normal text-[9px] md:text-[11px]">分</span></span>
+                </div>
+
+                <!-- Seconds Card -->
+                <div class="flex items-center justify-between px-4 py-3 md:px-6 md:py-4 bg-white/90 border border-white/60 rounded-2xl shadow-[0_12px_30px_rgba(212,163,115,0.06)] backdrop-blur-sm">
+                    <span id="seconds" class="font-serif-en text-3xl md:text-4xl font-light text-[#d4a373]">00</span>
+                    <div class="h-8 w-[1px] bg-stone-200 mx-3 md:mx-4"></div>
+                    <span class="text-[10px] md:text-xs uppercase tracking-[0.15em] text-[#8da399] font-medium text-left">Secs<br><span class="text-stone-400 font-normal text-[9px] md:text-[11px]">秒</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Wedding Details (V-Card Design) -->
+    <section id="details" class="py-28 bg-stone-50 border-t border-b border-stone-100">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <span class="font-serif-en text-xs md:text-sm tracking-[0.4em] text-[#d4a373] uppercase block mb-4">Save The Date</span>
+            <h2 class="text-3xl md:text-4xl tracking-[0.2em] font-medium mb-16 text-stone-800">婚禮詳情</h2>
+
+            <!-- V-Card Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-3xl mx-auto">
+                <!-- V-Card 1: Time -->
+                <div class="bg-white p-8 md:p-12 rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.02)] border border-stone-100 flex flex-col items-center">
+                    <div class="w-14 h-14 bg-[#d4a373]/10 text-[#d4a373] rounded-full flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <span class="font-serif-en text-[10px] md:text-sm tracking-[0.25em] text-[#8da399] uppercase mb-2">WHEN</span>
+                    <h3 class="text-lg md:text-xl font-medium text-stone-800 tracking-wider mb-4">婚禮時間</h3>
+                    <div class="h-[1px] w-12 bg-[#d4a373]/30 mb-4"></div>
+                    <p class="text-sm md:text-base text-stone-600 leading-relaxed font-light tracking-wide">
+                        <span class="whitespace-nowrap font-medium text-stone-700 text-base md:text-lg">2026 年 7 月 18 日 (六)</span><br>
+                        <span class="whitespace-nowrap font-semibold text-[#d4a373] text-base md:text-lg mt-1 block">中午 12:00 準時入席</span>
+                    </p>
+                </div>
+
+                <!-- V-Card 2: Location -->
+                <div class="bg-white p-8 md:p-12 rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.02)] border border-stone-100 flex flex-col items-center">
+                    <div class="w-14 h-14 bg-[#8da399]/10 text-[#8da399] rounded-full flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <span class="font-serif-en text-[10px] md:text-sm tracking-[0.25em] text-[#d4a373] uppercase mb-2">WHERE</span>
+                    <h3 class="text-lg md:text-xl font-medium text-stone-800 tracking-wider mb-4">婚禮地點</h3>
+                    <div class="h-[1px] w-12 bg-[#8da399]/30 mb-4"></div>
+                    <p class="text-sm md:text-base text-stone-600 leading-relaxed font-light tracking-wide">
+                        <span class="whitespace-nowrap font-semibold text-[#d4a373] text-base md:text-lg">凱達大飯店</span><br>
+                        <span class="whitespace-nowrap font-medium text-stone-700 text-sm md:text-base mt-1 block">台灣臺北市萬華區艋舺大道167號</span><br>
+                        <span class="whitespace-nowrap text-stone-500 text-xs md:text-sm mt-1 block">電話：02-2306-6777</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Accordion: Traffic Guide (Prevent wrapping of proper names on Mobile) -->
+            <div class="mt-20 max-w-2xl mx-auto text-left">
+                <h3 class="text-center font-medium text-xl tracking-widest text-stone-700 mb-8 flex items-center justify-center gap-3">
+                    <span class="w-6 h-[1px] bg-[#d4a373]"></span>
+                    交通與停車指引
+                    <span class="w-6 h-[1px] bg-[#d4a373]"></span>
+                </h3>
+
+                <!-- Accordion Box -->
+                <div class="bg-white rounded-2xl border border-stone-200/60 divide-y divide-stone-100 shadow-sm overflow-hidden">
+                    
+                    <!-- Accordion 1: Driving -->
+                    <div class="accordion-item">
+                        <button onclick="toggleAccordion(1)" class="w-full px-6 py-5 flex justify-between items-center text-left hover:bg-stone-50 transition-colors duration-200 focus:outline-none">
+                            <span class="text-base font-semibold text-stone-700 tracking-widest flex items-center">
+                                <span class="w-2.5 h-2.5 rounded-full bg-[#d4a373] mr-3"></span>
+                                自行開車 & 停車資訊
+                            </span>
+                            <span id="acc-icon-1" class="text-[#d4a373] transition-transform duration-300 transform">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </span>
+                        </button>
+                        <div id="acc-content-1" class="hidden px-6 pb-6 text-sm md:text-base text-stone-600 leading-relaxed font-light space-y-2">
+                            <p><strong class="text-stone-700">停車場地址：</strong><span class="whitespace-nowrap">台北市萬華區艋舺大道260號</span>。</p>
+                            <p>飯店內設有專屬地下停車場；若車位已滿，周邊亦有<span class="whitespace-nowrap">萬華車站停車場</span>與<span class="whitespace-nowrap">萬華行政中心</span>等收費停車場可供利用。</p>
+                        </div>
+                    </div>
+
+                    <!-- Accordion 2: MRT -->
+                    <div class="accordion-item">
+                        <button onclick="toggleAccordion(2)" class="w-full px-6 py-5 flex justify-between items-center text-left hover:bg-stone-50 transition-colors duration-200 focus:outline-none">
+                            <span class="text-base font-semibold text-stone-700 tracking-widest flex items-center">
+                                <span class="w-2.5 h-2.5 rounded-full bg-[#d4a373] mr-3"></span>
+                                大眾運輸：捷運 MRT
+                            </span>
+                            <span id="acc-icon-2" class="text-[#d4a373] transition-transform duration-300 transform">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </span>
+                        </button>
+                        <div id="acc-content-2" class="hidden px-6 pb-6 text-sm md:text-base text-stone-600 leading-relaxed font-light">
+                            搭乘<span class="whitespace-nowrap">板南線</span>至<span class="whitespace-nowrap">【龍山寺站】2號出口</span>，右轉<span class="whitespace-nowrap">大理街</span>，再左轉<span class="whitespace-nowrap">西園路一段306巷</span>底即可抵達，步行約 <span class="whitespace-nowrap">3 分鐘</span>。
+                        </div>
+                    </div>
+
+                    <!-- Accordion 3: TRA -->
+                    <div class="accordion-item">
+                        <button onclick="toggleAccordion(3)" class="w-full px-6 py-5 flex justify-between items-center text-left hover:bg-stone-50 transition-colors duration-200 focus:outline-none">
+                            <span class="text-base font-semibold text-stone-700 tracking-widest flex items-center">
+                                <span class="w-2.5 h-2.5 rounded-full bg-[#d4a373] mr-3"></span>
+                                大眾運輸：台鐵 TRA
+                            </span>
+                            <span id="acc-icon-3" class="text-[#d4a373] transition-transform duration-300 transform">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </span>
+                        </button>
+                        <div id="acc-content-3" class="hidden px-6 pb-6 text-sm md:text-base text-stone-600 leading-relaxed font-light">
+                            搭乘至<span class="whitespace-nowrap">【萬華車站】</span>，出站步行約 <span class="whitespace-nowrap">1 分鐘</span>即可抵達。
+                        </div>
+                    </div>
+
+                    <!-- Accordion 4: Bus -->
+                    <div class="accordion-item">
+                        <button onclick="toggleAccordion(4)" class="w-full px-6 py-5 flex justify-between items-center text-left hover:bg-stone-50 transition-colors duration-200 focus:outline-none">
+                            <span class="text-base font-semibold text-stone-700 tracking-widest flex items-center">
+                                <span class="w-2.5 h-2.5 rounded-full bg-[#d4a373] mr-3"></span>
+                                大眾運輸：公車 BUS
+                            </span>
+                            <span id="acc-icon-4" class="text-[#d4a373] transition-transform duration-300 transform">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </span>
+                        </button>
+                        <div id="acc-content-4" class="hidden px-6 pb-6 text-sm md:text-base text-stone-600 leading-relaxed font-light space-y-3">
+                            <p>
+                                <strong>至<span class="whitespace-nowrap">【龍山寺站】</span>：</strong>
+                                可搭乘 <span class="whitespace-nowrap">1</span>、<span class="whitespace-nowrap">49</span>、<span class="whitespace-nowrap">234</span>、<span class="whitespace-nowrap">242</span>、<span class="whitespace-nowrap">264</span>、<span class="whitespace-nowrap">265</span>、<span class="whitespace-nowrap">624</span> 等路線，步行約 <span class="whitespace-nowrap">5 分鐘</span>。
+                            </p>
+                            <p>
+                                <strong>至<span class="whitespace-nowrap">【萬華火車站】</span>：</strong>
+                                可搭乘 <span class="whitespace-nowrap">667</span> 號公車，步行約 <span class="whitespace-nowrap">1 分鐘</span>。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Accordion 5: Airport -->
+                    <div class="accordion-item">
+                        <button onclick="toggleAccordion(5)" class="w-full px-6 py-5 flex justify-between items-center text-left hover:bg-stone-50 transition-colors duration-200 focus:outline-none">
+                            <span class="text-base font-semibold text-stone-700 tracking-widest flex items-center">
+                                <span class="w-2.5 h-2.5 rounded-full bg-[#d4a373] mr-3"></span>
+                                機場交通 AIRPORT
+                            </span>
+                            <span id="acc-icon-5" class="text-[#d4a373] transition-transform duration-300 transform">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </span>
+                        </button>
+                        <div id="acc-content-5" class="hidden px-6 pb-6 text-sm md:text-base text-stone-600 leading-relaxed font-light space-y-2">
+                            <p><strong><span class="whitespace-nowrap">桃園機場</span>：</strong>搭乘機場捷運至A1台北車站，轉乘台北捷運板南線至<span class="whitespace-nowrap">龍山寺站</span>。</p>
+                            <p><strong><span class="whitespace-nowrap">台北松山機場</span>：</strong>搭乘捷運至忠孝復興站轉乘板南線至<span class="whitespace-nowrap">龍山寺站</span>。</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section: RSVP Form -->
+    <section id="rsvp" class="py-28 px-6 max-w-3xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="font-serif-en text-xs md:text-sm tracking-[0.4em] text-[#d4a373] uppercase block mb-4">Honored to Have You</span>
+            <h2 class="text-3xl md:text-4xl tracking-[0.2em] font-medium mb-4 text-stone-800">出席回函</h2>
+            <p class="text-sm md:text-base text-stone-500 font-light tracking-widest leading-relaxed">
+                為利安排席次與準備佳餚，請於 <span class="text-[#d4a373] font-semibold">2026年6月18日前</span> 撥冗填寫回函，萬分感謝。
+            </p>
+        </div>
+
+        <!-- Submission Target Iframe to prevent redirection -->
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+        <!-- RSVP Form Box -->
+        <div class="bg-white p-8 md:p-14 rounded-3xl shadow-[0_15px_45px_rgba(212,163,115,0.04)] border border-stone-100">
+            <form id="weddingRsvpForm" 
+                  action="https://docs.google.com/forms/d/e/1FAIpQLSdD4exH95QVsO1ni393VDoWUy7_3WnrrFsaC1QIx69keeHPTA/formResponse" 
+                  method="POST" 
+                  target="hidden_iframe" 
+                  onsubmit="submitFormHandler(event);"
+                  class="space-y-8">
+                
+                <!-- Guest Name (Larger inputs) -->
+                <div>
+                    <label class="block text-sm font-semibold tracking-widest text-stone-600 mb-3">
+                        姓名 <span class="font-serif-en text-stone-400 font-light ml-1">NAME</span>
+                    </label>
+                    <input type="text" 
+                           name="entry.1960502092" 
+                           id="guest_name"
+                           required
+                           placeholder="請輸入您的真實姓名" 
+                           class="w-full px-5 py-4 bg-stone-50/60 border border-stone-200/80 rounded-xl text-base focus:outline-none focus:border-[#d4a373] focus:bg-white transition-all duration-300">
+                </div>
+
+                <!-- Guest Email (Optional) -->
+                <div>
+                    <label class="block text-sm font-semibold tracking-widest text-stone-600 mb-3">
+                        電子喜卡 <span class="font-serif-en text-stone-400 font-light ml-1">EMAIL</span>
+                    </label>
+                    <input type="email" 
+                           name="entry.1161377519" 
+                           id="guest_email"
+                           placeholder="如：name@example.com（選填）" 
+                           class="w-full px-5 py-4 bg-stone-50/60 border border-stone-200/80 rounded-xl text-base focus:outline-none focus:border-[#d4a373] focus:bg-white transition-all duration-300">
+                </div>
+
+                <!-- Relationship Dropdown -->
+                <div>
+                    <label class="block text-sm font-semibold tracking-widest text-stone-600 mb-3">
+                        新人關係 <span class="font-serif-en text-stone-400 font-light ml-1">RELATIONSHIP</span>
+                    </label>
+                    <select name="entry.220172213"
+                            id="guest_relation"
+                            required
+                            class="w-full px-5 py-4 bg-stone-50/60 border border-stone-200/80 rounded-xl text-base focus:outline-none focus:border-[#d4a373] focus:bg-white transition-all duration-300">
+                        <option value="" disabled selected>請選擇您與新人的關係</option>
+                        <option value="廠商朋友">廠商朋友</option>
+                        <option value="男方家人親戚">男方家人親戚</option>
+                        <option value="男方朋友">男方朋友</option>
+                        <option value="女方家人親戚">女方家人親戚</option>
+                        <option value="女方朋友">女方朋友</option>
+                    </select>
+                </div>
+
+                <!-- Attending Guests Count (Manual Input) -->
+                <div>
+                    <label class="block text-sm font-semibold tracking-widest text-stone-600 mb-3">
+                        參加人數 <span class="font-serif-en text-stone-400 font-light ml-1">GUESTS</span>
+                    </label>
+                    <input type="number" 
+                           name="entry.9052302" 
+                           id="guest_count"
+                           required
+                           min="0"
+                           oninput="checkGuestCount()"
+                           placeholder="請輸入參加人數 (若不克出席請填 0)" 
+                           class="w-full px-5 py-4 bg-stone-50/60 border border-stone-200/80 rounded-xl text-base focus:outline-none focus:border-[#d4a373] focus:bg-white transition-all duration-300">
+                </div>
+
+                <!-- Conditional Dynamic Fields -->
+                <div id="conditional_fields" class="hidden space-y-8 pt-4 border-t border-stone-100">
+                    
+                    <!-- Vegetarian Count -->
+                    <div>
+                        <label class="block text-sm font-semibold tracking-widest text-stone-600 mb-3">
+                            需要素食人數 <span class="font-serif-en text-stone-400 font-light ml-1">NUMBER OF VEGETARIANS</span>
+                        </label>
+                        <input type="number" 
+                               name="entry.145540065" 
+                               id="diet_req"
+                               min="0"
+                               placeholder="請輸入素食人數，若無請填 0" 
+                               class="w-full px-5 py-4 bg-stone-50/60 border border-stone-200/80 rounded-xl text-base focus:outline-none focus:border-[#d4a373] focus:bg-white transition-all duration-300">
+                    </div>
+
+                    <!-- Baby / Children Chair -->
+                    <div>
+                        <label class="block text-sm font-semibold tracking-widest text-stone-600 mb-3">
+                            兒童椅需求數量 <span class="font-serif-en text-stone-400 font-light ml-1">BABY CHAIR</span>
+                        </label>
+                        <input type="number" 
+                               name="entry.226125500" 
+                               id="child_chair"
+                               min="0"
+                               placeholder="請輸入兒童椅需求數量，若無請填 0" 
+                               class="w-full px-5 py-4 bg-stone-50/60 border border-stone-200/80 rounded-xl text-base focus:outline-none focus:border-[#d4a373] focus:bg-white transition-all duration-300">
+                    </div>
+
+                </div>
+
+                <!-- Messages/Blessings -->
+                <div>
+                    <label class="block text-sm font-semibold tracking-widest text-stone-600 mb-3">
+                        給新人的祝福 <span class="font-serif-en text-stone-400 font-light ml-1">BLESSINGS 或其他備註</span>
+                    </label>
+                    <textarea name="entry.1063271626" 
+                              id="guest_message"
+                              rows="5" 
+                              placeholder="寫下您對我們最真摯的祝福..."
+                              class="w-full px-5 py-4 bg-stone-50/60 border border-stone-200/80 rounded-xl text-base focus:outline-none focus:border-[#d4a373] focus:bg-white transition-all duration-300"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="pt-4">
+                    <button type="submit" 
+                            class="w-full py-5 bg-[#d4a373] hover:bg-[#c39262] text-white text-base font-semibold tracking-[0.25em] rounded-xl shadow-lg shadow-[#d4a373]/20 hover:shadow-xl hover:shadow-[#d4a373]/30 transition-all duration-300 active:scale-[0.98]">
+                        送出出席回函 SUBMIT RSVP
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Section: Contact Info -->
+    <section id="contact" class="pb-24 px-6 max-w-xl mx-auto">
+        <!-- Visual Divider -->
+        <div class="h-[1px] w-full bg-stone-200/80 mb-12"></div>
+        
+        <!-- Elegant Contact Card -->
+        <div class="bg-white/80 border border-white/60 p-10 rounded-3xl shadow-[0_12px_30px_rgba(212,163,115,0.04)] backdrop-blur-sm text-center">
+            <span class="font-serif-en text-xs md:text-sm tracking-[0.4em] text-[#8da399] uppercase block mb-4">Contact Information</span>
+            <h3 class="text-lg font-medium tracking-[0.2em] mb-6 text-stone-800">相關聯絡資訊</h3>
+            <div class="w-12 h-[1px] bg-[#d4a373] mx-auto mb-6"></div>
+            
+            <div class="space-y-6 text-base text-stone-600 font-light">
+                <p class="leading-relaxed">
+                    <span class="text-xs font-semibold tracking-wider text-stone-400 block mb-2">相關聯絡人 CONTACT PERSON</span>
+                    <span class="text-stone-800 font-medium text-lg whitespace-nowrap">宏宇農產生技企業有限公司</span><br>
+                    <span class="text-stone-800 font-semibold text-lg mt-1 block">廖小姐</span>
+                </p>
+                
+                <!-- Click-to-Call Buttons for Phone & Tel (Larger layout) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-stone-100">
+                    <a href="tel:0977168701" class="block p-4 rounded-2xl bg-stone-50 hover:bg-stone-100 transition-colors duration-200">
+                        <span class="text-xs font-semibold tracking-wider text-[#8da399] block mb-1">手機 MOBILE</span>
+                        <span class="font-serif-en text-stone-800 font-bold hover:text-[#d4a373] transition-colors whitespace-nowrap text-lg">0977-168-701</span>
+                    </a>
+                    <a href="tel:066935656" class="block p-4 rounded-2xl bg-stone-50 hover:bg-stone-100 transition-colors duration-200">
+                        <span class="text-xs font-semibold tracking-wider text-[#8da399] block mb-1">市話 TELEPHONE</span>
+                        <span class="font-serif-en text-stone-800 font-bold hover:text-[#d4a373] transition-colors whitespace-nowrap text-lg">06-6935656</span>
+                    </a>
+                </div>
+                
+                <!-- Line ID -->
+                <div class="pt-2">
+                    <div class="inline-flex items-center gap-3 px-6 py-3 bg-stone-50 rounded-2xl text-sm text-stone-600 border border-stone-100">
+                        <span class="font-semibold text-[#8da399] tracking-wider">LINE ID :</span>
+                        <span class="font-serif-en text-stone-800 font-semibold text-base select-all">0977168701</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="success_modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm hidden">
+        <div class="bg-white max-w-sm w-full p-8 rounded-3xl text-center shadow-2xl border border-stone-100 transform scale-95 opacity-0 transition-all duration-300" id="modal_content">
+            <div class="w-16 h-16 bg-[#8da399]/10 text-[#8da399] rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+            </div>
+            <h3 class="text-2xl font-medium tracking-widest text-stone-800 mb-2">回函送出成功！</h3>
+            <p class="text-sm text-stone-500 font-light leading-relaxed mb-6">
+                我們已收到您的真摯答覆。<br>期待在當天與您共同慶祝這美好的日子！
+            </p>
+            <button onclick="closeSuccessModal()" 
+                    class="w-full py-3 bg-[#d4a373] hover:bg-[#c39262] text-white text-sm font-semibold tracking-widest rounded-xl transition-all duration-300">
+                關閉 CLOSE
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating Intelligent Scroll Helper -->
+    <div id="floating_scroll" class="fixed bottom-8 right-6 z-40 transition-all duration-500 opacity-0 translate-y-4 pointer-events-none">
+        <button onclick="handleFloatingClick()" class="w-12 h-12 bg-white/80 backdrop-blur-md text-[#d4a373] rounded-full flex items-center justify-center shadow-lg border border-white/60 hover:bg-white transition-all duration-300 focus:outline-none group active:scale-95">
+            <!-- Down/Up Arrow Icon -->
+            <svg id="scroll_arrow_icon" class="w-5 h-5 text-[#d4a373] transition-transform duration-300 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path id="arrow_path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-14 bg-stone-900 text-stone-400 text-center text-sm tracking-widest font-light border-t border-stone-800">
+        <!-- Using inline-block in footer to prevent wrapping -->
+        <p class="font-serif-condensed text-lg text-stone-300 mb-2 whitespace-nowrap">
+            <span class="inline-block">Huan-Yi</span> &amp; <span class="inline-block">Yo-Shin</span>
+        </p>
+        <p class="mb-6">2026.07.18 • CAESAR METRO TAIPEI</p>
+        <p class="text-xs text-stone-600">© 2026 Happily ever after starts here.</p>
+    </footer>
+
+    <!-- JavaScript For Interactivity -->
+    <script>
+        // Set the Wedding Target Time in Taipei Time (UTC+8)
+        // Date: July 18, 2026 at 12:00:00 PM
+        const targetDate = new Date("2026-07-18T12:00:00+08:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            if (difference < 0) {
+                document.getElementById("days").innerText = "00";
+                document.getElementById("hours").innerText = "00";
+                document.getElementById("minutes").innerText = "00";
+                document.getElementById("seconds").innerText = "00";
+                return;
+            }
+
+            // Calculation
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            // Print with padStart
+            document.getElementById("days").innerText = String(days).padStart(2, '0');
+            document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+            document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+            document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+        }
+
+        // Run countdown timer loop
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // RSVP Conditional Logic for number input (larger fonts logic)
+        function checkGuestCount() {
+            const guestCountInput = document.getElementById("guest_count");
+            const conditionalFields = document.getElementById("conditional_fields");
+            const dietInput = document.getElementById("diet_req");
+            const chairInput = document.getElementById("child_chair");
+
+            const count = parseInt(guestCountInput.value, 10);
+
+            if (count > 0) {
+                // Show fields elegantly
+                conditionalFields.classList.remove("hidden");
+                conditionalFields.classList.add("block", "animate-[fadeIn_0.4s_ease-out]");
+                
+                // Add required attribute for secondary fields
+                dietInput.setAttribute("required", "required");
+                chairInput.setAttribute("required", "required");
+            } else {
+                // Hide fields
+                conditionalFields.classList.add("hidden");
+                conditionalFields.classList.remove("block", "animate-[fadeIn_0.4s_ease-out]");
+                
+                // Remove required attribute
+                dietInput.removeAttribute("required");
+                chairInput.removeAttribute("required");
+                
+                // Clear their values dynamically
+                dietInput.value = "";
+                chairInput.value = "";
+            }
+        }
+
+        // Accordion Interaction
+        function toggleAccordion(index) {
+            const content = document.getElementById(`acc-content-${index}`);
+            const icon = document.getElementById(`acc-icon-${index}`);
+            
+            // Check if open
+            const isOpen = !content.classList.contains("hidden");
+
+            // Close all first to keep clean accordion behavior
+            for (let i = 1; i <= 5; i++) {
+                const otherContent = document.getElementById(`acc-content-${i}`);
+                const otherIcon = document.getElementById(`acc-icon-${i}`);
+                otherContent.classList.add("hidden");
+                otherIcon.classList.remove("rotate-180");
+            }
+
+            // Toggle selected
+            if (!isOpen) {
+                content.classList.remove("hidden");
+                content.classList.add("animate-[fadeIn_0.3s_ease-out]");
+                icon.classList.add("rotate-180");
+            }
+        }
+
+        // Initialize first Accordion open
+        toggleAccordion(1);
+
+        // Custom Submitting handler (Robust Instant Success & Background Post)
+        function submitFormHandler(e) {
+            // 1. Show elegant success modal instantly (bypasses cross-origin delay/blocking)
+            showSuccessModal();
+            
+            // 2. Let the form naturally POST to the iframe in the background.
+            // We then schedule a smooth form reset and check values.
+            setTimeout(() => {
+                document.getElementById("weddingRsvpForm").reset();
+                checkGuestCount();    // Reset conditional fields state
+            }, 500);
+        }
+
+        function showSuccessModal() {
+            const modal = document.getElementById("success_modal");
+            const modalContent = document.getElementById("modal_content");
+            modal.classList.remove("hidden");
+            
+            // Soft zoom in
+            setTimeout(() => {
+                modalContent.classList.remove("scale-95", "opacity-0");
+                modalContent.classList.add("scale-100", "opacity-100");
+            }, 50);
+        }
+
+        function closeSuccessModal() {
+            const modal = document.getElementById("success_modal");
+            const modalContent = document.getElementById("modal_content");
+            
+            modalContent.classList.remove("scale-100", "opacity-100");
+            modalContent.classList.add("scale-95", "opacity-0");
+            
+            setTimeout(() => {
+                modal.classList.add("hidden");
+            }, 300);
+        }
+
+        // Smart Scroll Indicator Control
+        let isAtBottom = false;
+
+        function handleScroll() {
+            const floatBtn = document.getElementById("floating_scroll");
+            const arrowIcon = document.getElementById("scroll_arrow_icon");
+            const arrowPath = document.getElementById("arrow_path");
+            
+            const scrollY = window.scrollY;
+            const winHeight = window.innerHeight;
+            const docHeight = document.documentElement.scrollHeight;
+
+            // 1. Show floating button only when scrolled past Hero cover (scrollY > 200)
+            if (scrollY > 200) {
+                floatBtn.classList.remove("opacity-0", "translate-y-4", "pointer-events-none");
+                floatBtn.classList.add("opacity-100", "translate-y-0");
+            } else {
+                floatBtn.classList.add("opacity-0", "translate-y-4", "pointer-events-none");
+                floatBtn.classList.remove("opacity-100", "translate-y-0");
+            }
+
+            // 2. Check if user has reached the bottom of the content
+            // (e.g. within 220px from the bottom, which is the contact or footer region)
+            if (scrollY + winHeight >= docHeight - 220) {
+                isAtBottom = true;
+                // Change arrow SVG direction to "UP"
+                arrowPath.setAttribute("d", "M5 10l7-7m0 0l7 7m-7-7v18");
+                arrowIcon.classList.remove("animate-bounce");
+            } else {
+                isAtBottom = false;
+                // Change arrow SVG direction to "DOWN"
+                arrowPath.setAttribute("d", "M19 14l-7 7m0 0l-7-7m7 7V3");
+                if (!arrowIcon.classList.contains("animate-bounce")) {
+                    arrowIcon.classList.add("animate-bounce");
+                }
+            }
+        }
+
+        // Handle Click Event on the Floating Button
+        function handleFloatingClick() {
+            if (isAtBottom) {
+                // If at the bottom, smooth scroll to the very top
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            } else {
+                // Otherwise, scan the next logical target block and scroll there
+                const targets = ["about", "details", "rsvp", "contact"];
+                const currentScroll = window.scrollY + 120; // safe offset for header
+                
+                let nextTarget = null;
+                for (let i = 0; i < targets.length; i++) {
+                    const el = document.getElementById(targets[i]);
+                    if (el && el.offsetTop > currentScroll) {
+                        nextTarget = el;
+                        break;
+                    }
+                }
+
+                if (nextTarget) {
+                    nextTarget.scrollIntoView({ behavior: "smooth" });
+                } else {
+                    // Fallback to scrolling to the bottom
+                    window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "smooth" });
+                }
+            }
+        }
+
+        // Register window scroll listener
+        window.addEventListener("scroll", handleScroll);
+    </script>
+</body>
+</html>
